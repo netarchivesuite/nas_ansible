@@ -1,0 +1,12 @@
+---
+
+- name: Deploy of basic NAS system
+  hosts: all
+  roles:
+     - nas
+
+- name: Deploy of harvester
+  hosts: harvesters
+  roles:
+     - harvester
+
