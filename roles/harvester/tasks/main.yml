@@ -1,15 +1,5 @@
 ---
 
  - name: Include generic deploy of single app
-   include: ../../nas/tasks/deploy_multi_app.yml
+   include: ../../nas/tasks/deploy_apps.yml
 
-## tasks file harvesters
-#- name: Copy NAS settings
-#  template:
-#    src: nas_settings.xml
-#    dest: /home/{{ansible_ssh_user}}/{{nas_env}}/conf/settings_HarvestControllerApplication_{{app_id}}.xml
-#
-#- name: Install start and stop scripts
-#  template:
-#      src: start_Application.sh
-#      dest: /home/{{ansible_ssh_user}}/{{nas_env}}/conf/start_{{app_name}}_{{app_id}}.sh

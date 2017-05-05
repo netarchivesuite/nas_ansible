@@ -7,6 +7,6 @@
 
 - name: Install start and stop scripts
   template:
-     src: "start_Application_multi.sh"
+     src: "start_Application.sh"
      dest: "/home/{{ansible_ssh_user}}/{{nas_env}}/conf/start_{{ item.app_name }}_{{ item.app_id }}.sh"
   with_items: "{{ apps }}"
