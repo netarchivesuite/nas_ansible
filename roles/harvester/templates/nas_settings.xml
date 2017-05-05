@@ -1,7 +1,7 @@
 <settings>
     <common>
       <environmentName>{{nas_env}}</environmentName>
-      <applicationInstanceId>{{app_id}}</applicationInstanceId>
+      <applicationInstanceId>{{item.app_id}}</applicationInstanceId>
       <remoteFile>
         <class>
           dk.netarkivet.common.distribute.FTPRemoteFile
@@ -102,7 +102,7 @@
             true
           </compression>
         <heritrixFilePattern>.*(\.journal|\.xml|\.txt|\.log|\.out|\.cxml)</heritrixFilePattern><reportFilePattern>.*-report.txt</reportFilePattern><logFilePattern>.*(\.log|\.out|\.gz)</logFilePattern></metadata>
-      <channel>{{channel}}</channel><heritrix3>
+      <channel>{{item.channel}}</channel><heritrix3>
               <bundle>/home/netarkdv/SystemTest/NetarchiveSuite-heritrix3-bundler-systemtest.zip</bundle></heritrix3><serverDir>harvester_high</serverDir></harvesting>
       <scheduler>
         <jobGen>

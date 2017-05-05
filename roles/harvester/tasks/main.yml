@@ -1,7 +1,7 @@
 ---
 
  - name: Include generic deploy of single app
-   include: ../../nas/tasks/deploy_single_app.yml
+   include: ../../nas/tasks/deploy_multi_app.yml
 
 ## tasks file harvesters
 #- name: Copy NAS settings
