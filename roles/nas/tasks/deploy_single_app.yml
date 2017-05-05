@@ -1,9 +1,8 @@
 ---
-# tasks file harvesters
 - name: Copy NAS settings
   template:
     src: nas_settings.xml
-    dest: /home/{{ansible_ssh_user}}/{{nas_env}}/conf/settings_HarvestControllerApplication_{{app_id}}.xml
+    dest: /home/{{ansible_ssh_user}}/{{nas_env}}/conf/settings_{{app_name}}_{{app_id}}.xml
 
 - name: Install start and stop scripts
   template:
